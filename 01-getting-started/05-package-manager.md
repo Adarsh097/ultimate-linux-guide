@@ -105,6 +105,11 @@ sudo zypper remove nginx   # Remove a package
   sudo apt install unattended-upgrades
   sudo dpkg-reconfigure unattended-upgrades
   ```
-
+  
+💡 Tip:
+If you want to allow dependency changes (install/remove packages), use:
+```
+sudo apt full-upgrade
+```
 ---
 This document provides a solid foundation for understanding package managers in Linux! 🚀
