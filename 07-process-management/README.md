@@ -11,11 +11,17 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `ps -C processname` – Show a process by name
 - `pgrep processname` – Find a process by name and return its PID
 - `pidof processname` – Find the PID of a running program
+- `ps aux | wc -l` - Find the number of running process
+- `ps aux | nl` - Find the number of running process
+- `ps -ef` - View all running process + memory utilisation
+- `ps aux | grep java | grep -v grep` - Find the specific process
+
 
 ### Managing Processes
 - `kill PID` – Terminate a process by PID
 - `pkill processname` – Terminate a process by name
 - `kill -9 PID` – Force kill a process
+- `kill -3 PID` - To get the thread dump
 - `pkill -9 processname` – Kill all instances of a process
 - `kill -STOP PID` – Stop a running process
 - `kill -CONT PID` – Resume a stopped process
